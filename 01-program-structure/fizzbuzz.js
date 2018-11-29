@@ -10,3 +10,24 @@ for(let i = 0; i <= 100; i++) {
     if(i % 5 == 0) output += 'Buzz';
     console.log(output || i);  // This is short-circuiting of logical operator. If output is empty displays the number.
 }
+
+/**
+ * My initial not so clever attempt
+ */
+for (var i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && !(i % 5 == 0)) {
+        console.log("Fizz");
+        continue;
+    }
+    else if (i % 5 == 0 && !(i % 3 == 0)) {
+        console.log("Buzz");
+        continue;
+    }
+    else if (i % 5 == 0 && i % 3 == 0) {
+        console.log("FizzBuzz");
+        continue;
+    }
+    else {
+        console.log(i);
+    }
+}
