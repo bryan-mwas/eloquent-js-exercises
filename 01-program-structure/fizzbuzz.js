@@ -8,7 +8,7 @@ for(let i = 0; i <= 100; i++) {
     let output = '';
     if(i % 3 == 0) output += 'Fizz';
     if(i % 5 == 0) output += 'Buzz';
-    console.log(output || i);  // This is short-circuiting of logical operator. If output is empty displays the number.
+    console.log(output || i);  // short-circuiting of logical operator, if output is empty displays the number.
 }
 
 /**
